@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <title>Make Transaction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="abcd">
+        <img id="img1" src="bank_image.png" />
+        <a href="#"> <span style="color : white;font-style: bolder;margin-top: 2px;"> Banking System </span></a>
+        <a href="index.html" class="underline"> Home </a>
+        <a href="view_all_customers.php" class="underline"> View All Customers </a>
+        <a href="transaction_history.php" class="underline"> Transaction history </a>
+        <a href="#" class="underline"> Make Transaction </a>
+        <a href="contact.html" class="underline"> Contact Us </a>
+    </div>
+
+    <div>
+        <form action="test_payment.php" method="POST">
+            <div>
+                <h1 style="margin-top: 10px;">
+                    Make Transaction
+                </h1>
+                <div id="payment">
+                    <div class="from__form__container">
+                        <div class="form__container">
+                            <input type="text" class="from__input" name="from_name" required placeholder=" " />
+                            <label class="from__label">From</label>
+                        </div>
+                    </div>
+                    <div class="from__form__container">
+                        <div class="form__container">
+                            <input type="text" class="from__input" name="to_name" required placeholder=" " />
+                            <label class="from__label">To</label>
+                        </div>
+                    </div>
+                    <div class="from__form__container">
+                        <div class="form__container">
+                            <input type="number" class="from__input" name="amount_to_transfer" min="0" required
+                                placeholder=" " />
+                            <label class="from__label">Amount</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button id="btn2" class="btn btn-outline-success" name="btn2"> Make payment </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <br>
+    </div>
+</body>
+
+</html>
